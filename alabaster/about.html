@@ -55,3 +55,19 @@
 </a>
 </p>
 {% endif %}
+
+{% if theme_coveralls_button|lower != 'false' %}
+{% if theme_coveralls_button|lower == 'true' %}
+    {% set path = theme_github_user + '/' + theme_github_repo %}
+{% else %}
+    {% set path = theme_coveralls_button %}
+{% endif %}
+<p>
+<a href="https://coveralls.io/github/{{ path }}">
+    <img
+    alt="https://coveralls.io/repos/github/{{ path }}/coverage.svg?branch=master"
+    src="https://coveralls.io/repos/github/{{ path }}/coverage.svg?branch=master"
+    />
+</a>
+</p>
+{% endif %}
