@@ -1,7 +1,7 @@
 {% if theme_logo %}
 <p class="logo">
   <a href="{{ pathto(master_doc) }}">
-    <img class="logo" src="{{ pathto('_static/' ~ theme_logo, 1) }}" alt="Logo"/>
+    <img class="logo" src="{{ pathto('_static/' ~ theme_logo, 1) }}" alt="{{ project }}"/>
     {% if theme_logo_name|lower == 'true' %}
     <h1 class="logo logo-name">{{ project }}</h1>
     {% endif %}
