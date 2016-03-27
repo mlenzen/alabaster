@@ -1,6 +1,7 @@
 <h3>Navigation</h3>
 {{ toctree(includehidden=theme_sidebar_includehidden) }}
 {% if theme_extra_nav_links %}
+<a href="{{ pathto('genindex') }}"
 <hr />
 <ul>
     {% for text, uri in theme_extra_nav_links.items() %}
