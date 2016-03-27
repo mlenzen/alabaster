@@ -1,6 +1,14 @@
 <h3>Navigation</h3>
 {{ toctree(includehidden=theme_sidebar_includehidden) }}
-<a href="{{ pathto('genindex') }}">Index</a>
+<ul>
+  <li class="toctree-l1">
+    <a class="reference internal" href="{{ pathto('genindex') }}">General Index</a>
+  </li>
+  <li class="toctree-l1">
+    <a class="reference internal" href="{{ pathto('modindex') }}">Module Index</a>
+  </li>
+</ul>
+
 {% if theme_extra_nav_links %}
 <hr />
 <ul>
